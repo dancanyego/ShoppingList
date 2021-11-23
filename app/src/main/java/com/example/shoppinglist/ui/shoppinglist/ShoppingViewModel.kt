@@ -6,7 +6,6 @@ import com.example.shoppinglist.Data.db.entities.ShoppingItem
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-
 class ShoppingViewModel(
     private val repository: ShoppingRepository
 ) : ViewModel() {
@@ -20,6 +19,8 @@ class ShoppingViewModel(
         repository.delete(item)
     }
 
-    fun getAllShoppingItems() = repository.getAllShoppingItems()
+    fun getAllShoppingItems() {
+        repository.getAllShoppingItems()
+    }
 
 }

@@ -14,4 +14,7 @@ class ShoppingRepository(
     fun getAllShoppingItems(Item: ShoppingItem) {
         db.getShoppingDao().getAllShoppingItems()
     }
+
+
+
 }
